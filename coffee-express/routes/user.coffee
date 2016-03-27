@@ -5,4 +5,10 @@ router = express.Router()
 router.get '/', (req, res) ->
   res.send 'respond with a resource'
 
+router.get '/mine', (req, res) ->
+  res.render 'mine', {
+    name: 'Yang xu'
+    age: 29
+  }
+
 module.exports = router

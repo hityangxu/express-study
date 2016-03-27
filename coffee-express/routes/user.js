@@ -10,6 +10,13 @@
     return res.send('respond with a resource');
   });
 
+  router.get('/mine', function(req, res) {
+    return res.render('mine', {
+      name: 'Yang xu',
+      age: 29
+    });
+  });
+
   module.exports = router;
 
 }).call(this);
